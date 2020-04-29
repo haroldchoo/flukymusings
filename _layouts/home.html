@@ -4,17 +4,15 @@ layout: default
 <!-- first image -->
 
 <!-- check if there background picture -->
-<!-- remember Liquid says if null, bool is false -->
 
 {% if page.background %}
 
-<div class="banner">
-  <img class="banner-image" src={{ page.background | prepend: site.baseurl | replace: '//', '/' }} alt="Welcome Photo"></img>
-  <div class="content"> {{content}} </div>
+<div class="banner-container">
+  <div class="banner" style="background-image: url({{ page.background | prepend: site.baseurl | replace: '//', '/' }})"> </div>
 </div>
 
-  {% else %}
+{% endif %}
 
-  <div class="content"> {{content}} </div>
+<div class="content"> {{content}} </div>
 
-  {% endif %}
+<div class="column"></div>
