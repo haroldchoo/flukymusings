@@ -11,53 +11,81 @@
 <!-- Navigation Bar -->
 
 
+<!-- definitely can be cleaned up
+If the page is on the link clicked then it is underlined-->
 
-  <ul>
 
-    <!-- definitely can be cleaned up
-    If the page is on the link clicked then it is underlined-->
 
-   <li class = left>
-       <a  class = 'active' , href="/">Your awesome title </a>
-  </li>
+  <ul class="nav-bar">
+     <li class = 'links left'>
+        <a  class = 'active' , href="/">Your awesome title </a>
+     </li>
 
-  <li class = 'right'>
-      <a  href="/about">About </a>
-  </li>
+     <li class = 'links right'>
+       <a  class='nav-links'  href="/about">About </a>
+     </li>
 
-  <li class = 'right'>
-      <a  href ="/recommend">Things I Like or Recommend</a>
-  </li>
+     <li class = 'links right'>
+       <a  class='nav-links'  href ="/recommend">Things I Like or Recommend</a>
+     </li>
 
-  <li class = 'right'>
-      <a  href ="/blogs">Blogs</a>
+     <li class = 'links right'>
+       <a  class='nav-links'  href ="/blogs">Blogs</a>
+     </li>
+
+     <li class = 'links right'>
+       <a  class='nav-links'  href ="/photos">All Photos</a>
     </li>
-
-    <li class = 'right'>
-        <a  href ="/photos">All Photos</a>
-      </li>
   </ul>
 
 </header>
-<!-- first image -->
-
-<!-- check if there background picture -->
+<div class = "container"><!-- first image -->
 
 
+<div class="flexbox">
 
-<div class="banner-container">
-  <div class="banner" style="background-image: url(/assets/img/home.jpg)"> </div>
-</div>
+  <!-- check if there background picture -->
+  
 
+  <div class="banner-container">
+    <div class="banner" style="background-image: url(/assets/img/home.jpg)"> </div>
+  </div>
 
+  
 
-<div class="content"> <p>Hey there! Thanks for visiting my page.  This site will be about pictures that I take and other experiences that I might want to talk about.</p>
+  <div class="content-container"> <p>Hey there! Thanks for visiting my page.  This site will be about pictures that I take and other experiences that I might want to talk about.</p>
  </div>
 
-<div class="column"></div>
+  <div class="top-container">
+      <div class="top-banner" style="background-image: url(/assets/img/apt-perdido.jpg)">
+        <div class="layer">
+        <a class="link" href="#"> Places </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="middle-container">
+    <div class="middle-banner" style="background-image: url(/assets/img/top-burnt-pizza.jpg)">
+      <div class="layer">
+        <a class="link" href="#"> Food </a>
+        </div>
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <div class="middle-banner" style="background-image: url(/assets/img/old-shoes.jpg)">
+      <div class="layer">
+        <a class="link" href="#"> Objects </a>
+      </div>
+    </div>
+  </div>
+
+<!-- making three links -->
+</div>
 <footer>
 
 </footer>
-</body>
+</div>
+  </body>
 
 </html>

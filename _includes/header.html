@@ -2,32 +2,32 @@
 
 <!-- Navigation Bar -->
 
+
+<!-- definitely can be cleaned up
+If the page is on the link clicked then it is underlined-->
+
 {% assign current = page.url | downcase | split: '/' %}
 
-  <ul>
+  <ul class="nav-bar">
+     <li class = 'links left'>
+        <a {% if current[1] %} class='nav-links' {% else %} class = 'active' {% endif %}, href="{{  "/" | relative_url }}">{{site.title}} </a>
+     </li>
 
-    <!-- definitely can be cleaned up
-    If the page is on the link clicked then it is underlined-->
+     <li class = 'links right'>
+       <a {% if current[1] == 'about' %} class = 'active' {% else %} class='nav-links' {% endif %} href="/about">About </a>
+     </li>
 
-   <li class = left>
-       <a {% if current[1] %} class='' {% else %} class = 'active' {% endif %}, href="{{  "/" | relative_url }}">{{site.title}} </a>
-  </li>
+     <li class = 'links right'>
+       <a {% if current[1] == 'recommend' %} class = 'active' {% else %} class='nav-links' {% endif %} href ="/recommend">Things I Like or Recommend</a>
+     </li>
 
-  <li class = 'right'>
-      <a {% if current[1] == 'about' %} class = 'active' {% endif %} href="/about">About </a>
-  </li>
+     <li class = 'links right'>
+       <a {% if current[1] == 'blogs' %} class = 'active' {% else %} class='nav-links' {% endif %} href ="/blogs">Blogs</a>
+     </li>
 
-  <li class = 'right'>
-      <a {% if current[1] == 'recommend' %} class = 'active' {% endif %} href ="/recommend">Things I Like or Recommend</a>
-  </li>
-
-  <li class = 'right'>
-      <a {% if current[1] == 'blogs' %} class = 'active' {% endif %} href ="/blogs">Blogs</a>
+     <li class = 'links right'>
+       <a {% if current[1] == 'photos' %} class = 'active' {% else %} class='nav-links' {% endif %} href ="/photos">All Photos</a>
     </li>
-
-    <li class = 'right'>
-        <a {% if current[1] == 'photos' %} class = 'active' {% endif %} href ="/photos">All Photos</a>
-      </li>
   </ul>
 
 </header>

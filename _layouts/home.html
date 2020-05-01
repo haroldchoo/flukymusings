@@ -3,16 +3,43 @@ layout: default
 ---
 <!-- first image -->
 
-<!-- check if there background picture -->
 
-{% if page.background %}
+<div class="flexbox">
 
-<div class="banner-container">
-  <div class="banner" style="background-image: url({{ page.background | prepend: site.baseurl | replace: '//', '/' }})"> </div>
+  <!-- check if there background picture -->
+  {% if page.background-pic %}
+
+  <div class="banner-container">
+    <div class="banner" style="background-image: url({{ page.background-pic | prepend: site.baseurl | replace: '//', '/' }})"> </div>
+  </div>
+
+  {% endif %}
+
+  <div class="content-container"> {{content}} </div>
+
+  <div class="top-container">
+      <div class="top-banner" style="background-image: url({{ page.top-pic | prepend: site.baseurl | replace: '//', '/' }})">
+        <div class="layer">
+        <a class="link" href="#"> Places </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="middle-container">
+    <div class="middle-banner" style="background-image: url({{ page.middle-pic | prepend: site.baseurl | replace: '//', '/' }})">
+      <div class="layer">
+        <a class="link" href="#"> Food </a>
+        </div>
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <div class="middle-banner" style="background-image: url({{ page.bottom-pic | prepend: site.baseurl | replace: '//', '/' }})">
+      <div class="layer">
+        <a class="link" href="#"> Objects </a>
+      </div>
+    </div>
+  </div>
+
+<!-- making three links -->
 </div>
-
-{% endif %}
-
-<div class="content"> {{content}} </div>
-
-<div class="column"></div>
