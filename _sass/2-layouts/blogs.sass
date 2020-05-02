@@ -2,8 +2,6 @@ div.home
   margin-top: 2em
   display: block
 
-h2.post-list-heading
-
 ul.post-list
   list-style-type: none
   > li
@@ -25,9 +23,19 @@ a.post-link
   @include relative-font-size(1.5)
 
 div.pager
+  .pagination
+    margin-bottom: $spacing-unit
+    //@extend .social-media-list
+    li
+      a, div
+      min-width: 41px
+      text-align: center
+      box-sizing: border-box
+      div
+        display: block
+        padding: $spacing-unit / 4
+        border: 1px solid transparent
 
-ul.pagination
-
-div.pager-edge
-
-div.current-page
+        &.pager-edge
+          color: black
+          border: 1px dashed
