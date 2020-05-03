@@ -10,7 +10,7 @@ If the page is on the link clicked then it is underlined-->
 
   <ul class="nav-bar">
      <li class = 'links left'>
-        <a {% if current[1] %} class='nav-links' {% else %} class = 'active' {% endif %}, href= '{{ site.url | append: site.baseurl }}/home'> {{site.title}} </a>
+        <a {% if current[1] %} class='nav-links' {% else %} class = 'active' {% endif %}, href= '{{ site.url | append: site.baseurl }}'> {{site.title}} </a>
      </li>
 
      <li class = 'links right'>
