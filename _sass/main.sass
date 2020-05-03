@@ -9,6 +9,8 @@ $base-font-weight: 400 !default
 $small-font-size:  $base-font-size * 0.875 !default
 $base-line-height: 1.5 !default
 
+$fa-font-path: "../webfonts"
+
 $spacing-unit:     30px !default
 
 $table-text-align: left !default
@@ -37,8 +39,6 @@ $on-large:         $on-laptop !default
 
 @mixin relative-font-size($ratio)
   font-size: #{$ratio}rem
-
-
 
 @import "0-base/dir-base"
 @import "1-modules/dir-modules"
