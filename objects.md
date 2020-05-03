@@ -1,5 +1,5 @@
 ---
-layout: sub-album
-sub-album: objects-thumb
-sub-album-loc: "/assets/img/thumbnails/objects-thumb"
+layout: album
+sub-album: objects-full
+album-loc: "/assets/img/albums/objects-full"
 ---

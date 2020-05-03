@@ -1,5 +1,5 @@
 ---
-layout: sub-album
-sub-album: food-thumb
-sub-album-loc: "/assets/img/thumbnails/food-thumb"
+layout: album
+sub-album: food-full
+album-loc: "/assets/img/albums/food-full"
 ---

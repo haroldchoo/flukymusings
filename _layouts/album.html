@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class = "album">
+    <ul class = picture>
+      {% for image in site.static_files %}
+      {% if page.sub-album %}
+        {% if image.path contains page.sub-album %}
+          <li class="thumb">
+              <a href="{{ site.baseurl }}{{ page.album-loc }}/{{ image.name }}" class="image">
+                  <img src="{{ site.baseurl }}{{ page.album-loc }}/{{ image.name }}" alt=""
+                      data-name="{{ image.name }}" loading="lazy"/></a>
+                    </li>
+                    {% endif %}
+                    {% else %}
+                    <li class="thumb">
+                      <a href="{{ site.baseurl }}{{ image.path }}" class="image">
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt=""
+                        data-name="{{ image.name }}" loading="lazy"/></a>
+                      </li>
+                      {% endif %}
+                      {% endfor %}
+                      <li class="last-thumb"></li>
+                    </ul>
+                  </div>
