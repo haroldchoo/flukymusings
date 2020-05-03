@@ -14,19 +14,19 @@ If the page is on the link clicked then it is underlined-->
      </li>
 
      <li class = 'links right'>
-       <a {% if current[1] == 'about' %} class = 'active' {% else %} class='nav-links' {% endif %} href='/about'> About </a>
+       <a {% if current[1] == 'about' %} class = 'active' {% else %} class='nav-links' {% endif %} href='{{ site.baseurl }}/about'> About </a>
      </li>
 
      <li class = 'links right'>
-       <a {% if current[1] == 'recommend' %} class = 'active' {% else %} class='nav-links' {% endif %} href ='/recommend'> Things I Like or Recommend</a>
+       <a {% if current[1] == 'recommend' %} class = 'active' {% else %} class='nav-links' {% endif %} href ='{{ site.baseurl }}/recommend'> Things I Like or Recommend</a>
      </li>
 
      <li class = 'links right'>
-       <a {% if current[1] == 'blogs' %} class = 'active' {% else %} class='nav-links' {% endif %} href ='/blogs'> Blogs</a>
+       <a {% if current[1] == 'blogs' %} class = 'active' {% else %} class='nav-links' {% endif %} href ='{{ site.baseurl }}/blogs'> Blogs</a>
      </li>
 
      <li class = 'links right'>
-       <a {% if current[1] == 'photos' %} class = 'active' {% else %} class='nav-links' {% endif %} href ='/photos'> All Photos</a>
+       <a {% if current[1] == 'photos' %} class = 'active' {% else %} class='nav-links' {% endif %} href ='{{ site.baseurl }}/photos'> All Photos</a>
     </li>
   </ul>
 
