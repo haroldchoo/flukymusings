@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class = "sub-album">
+  <ul class = picture>
+  {% for image in site.static_files %}
+    {% if image.path contains page.sub-album %}
+      <li class="thumb">
+          <a href="{{ site.baseurl }}{{ page.sub-album-loc }}/{{ image.name }}" class="image">
+              <img src="{{ site.baseurl }}{{ page.sub-album-loc }}/{{ image.name }}" alt=""
+                   data-name="{{ image.name }}" loading="lazy"/></a>
+      </li>
+    {% endif %}
+  {% endfor %}
+    <li class="last-thumb"></li>
+  </ul>
+</div>
