@@ -1,3 +1,4 @@
 ---
 layout: album
+permalink: /photos/
 ---

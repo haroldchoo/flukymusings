@@ -1,5 +1,5 @@
 ---
 layout: blogs
 title: Blogs
-permalink: /blogs
+permalink: /blogs/
 ---

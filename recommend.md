@@ -1,5 +1,6 @@
 ---
 layout: recommend
+permalink: /recommend
 ---
 
 [I'm an inline-style link](https://www.google.com)<br>
