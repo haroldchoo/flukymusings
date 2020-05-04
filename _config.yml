@@ -17,7 +17,7 @@ twitter_username: bagelsarelife
 github_username:  haroldchoo
 
 # Build settings
-permalink: pretty
+# permalink: pretty
 
 # Build settings
 theme: minima
@@ -26,3 +26,7 @@ plugins:
 
 sass:
   sass_dir: _sass
+
+
+baseurl: "/flukymusings" # the subpath of your site, e.g. /blog
+url: "https://haroldchoo.github.io" # the base hostname & protocol for your site, e.g. http://example.com

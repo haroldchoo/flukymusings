@@ -3,14 +3,13 @@ layout: default
 ---
 <!-- first image -->
 
-
 <div class="flexbox">
 
-  <!-- check if there background picture -->
-  {% if page.background-pic %}
+  <!-- check if there background picture
+  {% if page.background-pic %} -->
 
   <div class="banner-container">
-    <div class="banner" style="background-image: url({{ page.background-pic | prepend: site.baseurl | replace: '//', '/' }})"> </div>
+    <div class="banner" style="background-image: url('https://haroldchoo.github.io/flukymusings/assets/img/albums/places-full/wharf.jpg')"> </div>
   </div>
 
   {% endif %}
@@ -18,7 +17,7 @@ layout: default
   <div class="content-container"> {{content}} </div>
 
   <div class="top-container">
-      <div class="top-banner" style="background-image: url({{ page.top-pic | prepend: site.baseurl | replace: '//', '/' }})">
+      <div class="top-banner" style="background-image: url('https://haroldchoo.github.io/flukymusings/assets/img/albums/places-full/apartment-perdido.jpg' )">
         <div class="layer">
         <a class="link" href="{{ site.baseurl }}/places"> Places </a>
       </div>
@@ -26,7 +25,7 @@ layout: default
   </div>
 
   <div class="middle-container">
-    <div class="middle-banner" style="background-image: url({{ page.middle-pic | prepend: site.baseurl | replace: '//', '/' }})">
+    <div class="middle-banner" style="background-image: url('https://haroldchoo.github.io/flukymusings/assets/img/albums/food-full/top-burnt-pizza.jpg' )">
       <div class="layer">
         <a class="link" href="{{ site.baseurl }}/food"> Food </a>
         </div>
@@ -34,7 +33,7 @@ layout: default
   </div>
 
   <div class="bottom-container">
-    <div class="middle-banner" style="background-image: url({{ page.bottom-pic | prepend: site.baseurl | replace: '//', '/' }})">
+    <div class="middle-banner" style="background-image: url('https://haroldchoo.github.io/flukymusings/assets/img/albums/objects-full/old-shoes.jpg ')">'
       <div class="layer">
         <a class="link" href="{{ site.baseurl }}/objects"> Objects </a>
       </div>
