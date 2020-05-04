@@ -20,7 +20,6 @@ github_username:  haroldchoo
 # permalink: pretty
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 
